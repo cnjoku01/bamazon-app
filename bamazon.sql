@@ -5,12 +5,12 @@ CREATE DATABASE bamazonDB;
 USE bamazonDB;
 
 CREATE TABLE products (
-  id INT NOT NULL AUTO_INCREMENT,
+  item_id INT NOT NULL AUTO_INCREMENT,
   productName VARCHAR (255) NOT NULL,
   departmentName VARCHAR (255) NOT NULL,
   price FLOAT(9, 2) NOT NULL,
   quantity INT NULL,
-  PRIMARY KEY (id)
+  PRIMARY KEY (item_id)
 );
 
 Select * FROM products;
