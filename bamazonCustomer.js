@@ -79,6 +79,7 @@ connection.connect(function(err) {
               console.log("Your order is in stock!");
               console.log(" Your total cost for " + orderNeeded + " " +res[0].productName + " is " + totalCost + " Thank you!");
               
+              // Code tp update database
             // connection.query("UPDATE products SET quantity = quantity - " + orderNeeded + "WHERE item_id = " + ID);
           } else {
               console.log("Insufficient quantity, sorry we are all out of " + res[0].productName + " to complete your order. ");
